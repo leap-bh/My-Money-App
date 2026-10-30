@@ -141,8 +141,8 @@ body.authenticated #authGate{display:none!important}
 const ids='headerMonth cashBalance balanceNote home mIncome mExpense totalDebt totalReceivable recentList transactions txnMonth txnSearch txnList debts debtTotalPage debtCount debtList receivables recTotalPage recCount recList reports reportMonth rIncome rExpense rNet rCount categoryReport insight settings cloudCard cloudStatus signedInFields currency salary opening restoreFile txnDialog txnForm txnTitle tType tDate tAmount tCategory tDesc tPerson tNotes debtDialog debtForm dName dType dOriginal dBalance dRate dDue dNotes recDialog recForm rName rReason rOriginal rBalance rDate rDue rNotes paymentDialog paymentForm paymentTitle pId pKind pAmount pDate pNote'.split(' ');
 const el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
 const {headerMonth,cashBalance,balanceNote,home,mIncome,mExpense,totalDebt,totalReceivable,recentList,transactions,txnMonth,txnSearch,txnList,debts,debtTotalPage,debtCount,debtList,receivables,recTotalPage,recCount,recList,reports,reportMonth,rIncome,rExpense,rNet,rCount,categoryReport,insight,settings,cloudCard,cloudStatus,signedInFields,currency,salary,opening,restoreFile,txnDialog,txnForm,txnTitle,tType,tDate,tAmount,tCategory,tDesc,tPerson,tNotes,debtDialog,debtForm,dName,dType,dOriginal,dBalance,dRate,dDue,dNotes,recDialog,recForm,rName,rReason,rOriginal,rBalance,rDate,rDue,rNotes,paymentDialog,paymentForm,paymentTitle,pId,pKind,pAmount,pDate,pNote}=el;
-const SUPABASE_URL="https://kryurnfjxpplrcuaigxa.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY="sb_publishable_7R75uh9wm9ofG62-dzcVbA_NefJYP0x";
+const SUPABASE_URL="https://yrdnsnvdmioqqoyhadmh.supabase.co/rest/v1/";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_HKpWRH3-ly1cWDTLjxZq5A_s4jh8MIC";
 const supabaseClient=(window.supabase&&typeof window.supabase.createClient==='function')?window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 let currentUser=null,cloudReady=false,authBusy=false;
 let cloudIds={transactions:new Set(),debts:new Set(),receivables:new Set()};
